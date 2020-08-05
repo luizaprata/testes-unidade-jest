@@ -1,34 +1,30 @@
 {
-  "name": "testes-jest",
-  "version": "0.1.0",
+  "name": "TestesUnidadeJest",
+  "version": "0.0.1",
   "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
-  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "jest ./src"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/runtime": "^7.11.1",
+    "babel-jest": "^26.2.2",
+    "jest": "^26.2.2",
+    "metro-react-native-babel-preset": "^0.61.0",
+    "react-dom": "^16.13.1",
+    "react-test-renderer": "16.13.1"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
+  "jest": {
+    "setupFiles": [
+      "./src/setupTests.js"
     ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "testMatch": [
+      "**/?(*.)(spec).(js|jsx)?(x)"
+    ],
+    "testEnvironment": "node",
+    "collectCoverage": true,
+    "transform": {
+      "^.+\\.(js|jsx)?$": "babel-jest"
+    }
   }
 }
