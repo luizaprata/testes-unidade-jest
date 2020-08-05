@@ -26,5 +26,8 @@
     "transform": {
       "^.+\\.(js|jsx)?$": "babel-jest"
     }
+  },
+  "dependencies": {
+    "winston": "^3.3.3"
   }
 }

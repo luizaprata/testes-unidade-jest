@@ -1,11 +1,11 @@
-import { info } from './logger.js';
+import { logger } from '../infraestrutura/logger.js';
 
 class Calculadora {
   total = 0;
   soma = (listaNumeros) => {
     const resultado = listaNumeros.reduce((a, b) => a + b, 0);
     this.total += resultado;
-    info(`total atualizado: ${this.total}`);
+    logger.info(`resultado da soma ${this.total}`);
     return resultado;
   };
 }
