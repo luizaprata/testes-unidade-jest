@@ -1,9 +1,13 @@
-#Requisitos
+# Requisitos
+
 Para rodar esse projeto, você precisa ter instalado na sua máquina:
 
-brew
-yarn
 node v13.0.1
 
-###Você pode rodar os testes com:
-yarn test
+### Para rodar o projeto utilize o comando
+
+`npm install`
+
+### Você pode rodar os testes com:
+
+`npm run test`
