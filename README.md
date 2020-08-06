@@ -10,4 +10,4 @@ node v13.0.1
 
 ### Você pode rodar os testes com:
 
-`npm run test`
+`npx jest`
